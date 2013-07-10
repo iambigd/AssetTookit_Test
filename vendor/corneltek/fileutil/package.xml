@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.10" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0               http://pear.php.net/dtd/tasks-1.0.xsd               http://pear.php.net/dtd/package-2.0               http://pear.php.net/dtd/package-2.0.xsd">
+  <name>FileUtil</name>
+  <channel>pear.corneltek.com</channel>
+  <summary>Fast File Utility Functions for PHP</summary>
+  <description>Fast File Utility Functions for PHP</description>
+  <lead>
+    <name>Yo-An Lin</name>
+    <user/>
+    <email>cornelius.howl@gmail.com</email>
+    <active>yes</active>
+  </lead>
+  <date>2013-03-22</date>
+  <time>12:29:55</time>
+  <version>
+    <release>1.6.1</release>
+    <api>1.6.1</api>
+  </version>
+  <stability>
+    <release>stable</release>
+    <api>stable</api>
+  </stability>
+  <license>PHP</license>
+  <notes>-</notes>
+  <contents>
+    <dir name="/">
+      <file name="config.h" role="src" md5sum="9abb14c31b78d8143fca3b07e30c38d6"/>
+      <file name="path.h" role="src" md5sum="00b4764e79a1e73709f1f8e20b2b65ad"/>
+      <file name="php_fileutil.h" role="src" md5sum="5360543778dd2a81a1739f758948ee67"/>
+      <file name="php_fileutil_rmtree.h" role="src" md5sum="584c6513d60d4ff3b4e2a12c88a417df"/>
+      <file name="phpdir.h" role="src" md5sum="94863c8f6f7f7fb94b1dcf052112f84b"/>
+      <file name="path.c" role="src" md5sum="2a1212413e37f099a4c3aae667f30731"/>
+      <file name="php_fileutil.c" role="src" md5sum="082f9518ca7553fa12cc2e461cacfe29"/>
+      <file name="php_fileutil_rmtree.c" role="src" md5sum="4cddb2212174e2318df25e9709273581"/>
+      <file name="phpdir.c" role="src" md5sum="5a3ea544c79f5127f72c6c3873020502"/>
+      <file name="config.m4" role="src" md5sum="d8f2f9233589a2890d3defa08a700c82"/>
+    </dir>
+  </contents>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.3</min>
+      </php>
+      <pearinstaller>
+        <min>1.4</min>
+      </pearinstaller>
+    </required>
+  </dependencies>
+  <providesextension>fileutil</providesextension>
+  <extsrcrelease/>
+</package>

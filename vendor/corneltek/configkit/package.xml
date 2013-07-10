@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.10" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0               http://pear.php.net/dtd/tasks-1.0.xsd               http://pear.php.net/dtd/package-2.0               http://pear.php.net/dtd/package-2.0.xsd">
+  <name>ConfigKit</name>
+  <channel>pear.corneltek.com</channel>
+  <summary>ConfigFile Toolkit</summary>
+  <description>ConfigFile Toolkit</description>
+  <lead>
+    <name>Yo-An Lin</name>
+    <user/>
+    <email>cornelius.howl@gmail.com</email>
+    <active>yes</active>
+  </lead>
+  <date>2013-03-21</date>
+  <time>22:48:58</time>
+  <version>
+    <release>1.3.0</release>
+    <api>1.3.0</api>
+  </version>
+  <stability>
+    <release>stable</release>
+    <api>stable</api>
+  </stability>
+  <license>PHP</license>
+  <notes>-</notes>
+  <contents>
+    <dir name="/">
+      <file name="src/ConfigKit/Accessor.php" role="php" md5sum="ffca8088ee524c82169ae38c8de05618"/>
+      <file name="src/ConfigKit/ConfigCompiler.php" role="php" md5sum="36985b35e33bbc0d9835ff022c2e0d7f"/>
+      <file name="src/ConfigKit/ConfigLoader.php" role="php" md5sum="d5e4dbf1d596a8df95ffe6a298572550"/>
+      <file name="bin/configkit" role="script" md5sum="2a69681d27393089d5e022fcf276312b"/>
+    </dir>
+  </contents>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.3</min>
+      </php>
+      <pearinstaller>
+        <min>1.4</min>
+      </pearinstaller>
+      <package>
+        <name>FileUtil</name>
+        <channel>pear.corneltek.com</channel>
+        <min>0.0.0</min>
+      </package>
+      <extension>
+        <name>yaml</name>
+        <min>0.0.0</min>
+      </extension>
+    </required>
+  </dependencies>
+  <phprelease>
+    <filelist>
+      <install name="src/ConfigKit/Accessor.php" as="ConfigKit/Accessor.php"/>
+      <install name="src/ConfigKit/ConfigCompiler.php" as="ConfigKit/ConfigCompiler.php"/>
+      <install name="src/ConfigKit/ConfigLoader.php" as="ConfigKit/ConfigLoader.php"/>
+      <install name="bin/configkit" as="configkit"/>
+    </filelist>
+  </phprelease>
+</package>

@@ -1,0 +1,7 @@
+---
+resource:
+  
+collections:
+  - javascript:
+    - iangeltest.js
+    - iangeltest2.js

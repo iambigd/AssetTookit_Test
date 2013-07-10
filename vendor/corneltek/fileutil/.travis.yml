@@ -1,0 +1,21 @@
+language: php
+php:
+  - 5.3
+  - 5.4
+
+before_script:
+  - phpenv rehash
+  - pear channel-discover pear.corneltek.com
+  - pear channel-update -f corneltek
+  - pear install corneltek/Universal
+  - pear install corneltek/PHPUnit_TestMore
+  - pear install -f corneltek/PHPUnit_Framework_ExtensionTestCase
+  - pear install -f corneltek/ExtUnit
+  - curl -O https://raw.github.com/c9s/Onion/master/onion
+  - php onion -q install
+  - composer install --dev
+  - phpenv rehash
+  - phpize
+  - ./configure > /dev/null
+  - make > /dev/null
+script: scripts/test_all.sh
